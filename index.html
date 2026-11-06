@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBU - Integrated Facility Services & Commercial Cleaning Indonesia</title>
+    <meta name="description" content="Penyedia Layanan Keahlian Kebersihan Gedung, Management Security, Care & Maintenance Taman, dan Outsource Manpower Terpercaya di Indonesia. ISO 9001:2015 Certified.">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="top-bar py-2 text-white bg-primary-dark">  
+    <div class="container d-flex justify-content-between align-items-center text-xs">
+            <div class="d-none d-md-flex align-items-center gap-3">
+                <span><i class="fa-solid fa-phone text-accent me-2"></i>+62 815 8485 0845</span>
+                <span><i class="fa-solid fa-envelope text-accent me-2"></i>berkatutamakawanua@gmail.com</span>
+                <span><i class="fa-solid fa-location-dot text-accent me-2"></i>Jabodetabek dan Beberapa kota besar di Indonesia</span>
+            </div>
+            <div class="d-flex align-items-center gap-3 ms-auto ms-md-0">
+                <span class="badge bg-accent text-dark fw-bold px-2 py-1"><i class="fa-solid fa-shield-halved me-1"></i>ISO 9001:2015 Certified</span>
+                <div class="vr d-none d-sm-block"></div>
+
+                <div class="lang-switch d-flex align-items-center gap-1">
+                    <button class="lang-btn active" id="lang-id">ID</button>
+                    <span class="opacity-50">|</span>
+                    <button class="lang-btn" id="lang-en">EN</button>
+                </div>
+
+                <button class="theme-toggle-btn ms-2" id="themeToggle" title="Toggle Mode Gelap/Terang">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-xl sticky-top glass-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <div class="brand-logo-icon">
+                    <i class="fa-solid fa-sparkles text-accent"></i>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="brand-title">KAWANUA <span class="text-accent">BERKAT UTAMA</span></span>
+                    <span class="brand-subtitle" data-i18n="nav.subtitle">Facility Services</span>
+                </div>
+            </a>
+
+                      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-xl-center me-xl-3 gap-xl-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" data-i18n="nav.home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-i18n="nav.about">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vision" data-i18n="nav.vision">Visi & Misi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#service" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.services">
+                            Layanan
+                            </a>
+<ul class="dropdown-menu shadow-lg border-0 glass-card"></ul>
+<li> <a class="dropdown-item" href="#service"><i class="fa-solid fa-broom me-2 text-accent"></i>Commercial Cleaning</a></li>
+<li> <a class="drop-item" href="#service"><i class="fa-solid fa-shield-cat me-2 text-accent"></i>Security Management</a></li>
+<li><a class="dropdown-item" href="#office-support"><i class="fa-solid fa-headset me-2 text-accent"></i>Office Support & Outsource</a></li>
+                        </ul>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#calculator" data-i18n="nav.calculator">Kalkulator Biaya</a>
+                    </li>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#careers" data-i18n="nav.careers">Karir</a>
+                    </li>
+                    
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+                    <button class="btn btn-accent-lg fw-bold rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                        <i class="fa-solid fa-calculator me-2"></i><span data-i18n="nav.getQuote">Minta Penawaran</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     <section class="hero-section text-white position-relative overflow-hidden" id="home">
+        <div class="container position-relative z-2">
+              <img src="Gambar/Kbu.png">
+            <div class="row align-items-center min-vh-75 py-5">
+                <div class="col-lg-7 text-start">
+                    <div class="hero-badge d-inline-flex align-items-center gap-2 mb-3">
+                        <span class="pulse-dot"></span>                     
+                        <span class="fw-semibold text-uppercase text-accent tracking-wider text-xs" data-i18n="hero.badge">Solusi Outsource & Facility Management Terbaik</span>
+                    </div>
+                    <h1 class="hero-title display-4 fw-extrabold mb-3">
+                        KBU <span class="gradient-text">Service</span> Facilities
+                    </h1>
+                    <h2 class="hero-subtitle h4 text-light opacity-90 fw-normal mb-4">
+                        <span data-i18n="hero.tagline">Mengubah Krisis Menjadi Peluang Bisnis.</span>
+                    </h2>
+                    <p class="hero-description lead mb-4 text-light opacity-80" data-i18n="hero.desc">
+                        Mitra strategis dalam pengelolaan kebersihan gedung, manajemen keamanan, perawatan taman, dan penyediaan tenaga kerja profesional berpengalaman untuk korporasi, gedung bertingkat, mall, & rumah sakit di seluruh Indonesia.
+                    </p>
+ <div class="d-flex flex-wrap align-items-center gap-3 mb-5">
+                        <a href="#calculator" class="btn btn-accent-lg btn-lg rounded-pill fw-bold shadow-lg">
+                            <i class="fa-solid fa-calculator me-2"></i><span data-i18n="hero.ctaCalc">Hitung Estimasi Biaya</span>
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg rounded-pill fw-semibold px-4">
+                            <i class="fa-circle-play text-accent me-2"></i><span data-i18n="hero.ctaAbout">Pelajari Lebih Lanjut</span>
+                        </a>
+                    </div>
+
+                       <div class="hero-stats-row row g-3 pt-3 border-top border-white-20">
+                        <div class="col-4 col-sm-4">
+                            <div class="stat-item">
+                                <h3 class="stat-number gradient-text mb-0" data-target="50000">0</h3>
+                                <p class="stat-label text-xs opacity-75 mb-0" data-i18n="hero.statPersonnel">Personel Berpengalaman</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4">
+                            <div class="stat-item">
+                                <h3 class="stat-number gradient-text mb-0" data-target="35">0</h3>
+                                <p class="stat-label text-xs opacity-75 mb-0" data-i18n="hero.statCities">Jaringan Kota di Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4">
+                            <div class="stat-item">
+                                <h3 class="stat-number gradient-text mb-0" data-target="650">0</h3>
+                                <p class="stat-label text-xs opacity-75 mb-0" data-i18n="hero.statClients">Klien Korporasi Komersial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mt-5 mt-lg-0 text-center">
+                    <div class="hero-card-stack position-relative">
+                        <div class="hero-img-container shadow-2xl rounded-4 overflow-hidden border border-white-20">
+                            <img src="Gambar/kantor.jpg" alt="KBU Cleaning Service Staff" class="hero-img">
+                        </div>
+
+                        <div class="floating-glass-card card-top-left glass-card p-3 rounded-3 shadow float-animation">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="icon-circle bg-success text-white">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <div class="text-start">
+                                    <h6 class="mb-0 fw-bold text-dark text-sm">Standar ISO 9001</h6>
+                                    <span class="text-xs text-muted">Quality Control Strict</span>
+                                </div>
+                            </div>
+                        </div>
+
+                          <div class="floating-glass-card card-bottom-right glass-card p-3 rounded-3 shadow float-animation">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="icon-circle bg-accent text-dark">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="text-start">
+                                    <h6 class="mb-0 fw-bold text-dark text-sm">Layanan 24/7</h6>
+                                    <span class="text-xs text-muted">Respon Cepat Tanggap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <div class="bg-body-secondary py-4 border-bottom">
+        <div class="container">
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <div class="client-box"><i class="fa-solid fa-building me-2 text-accent"></i>MALL</div>
+                    <div class="client-box"><i class="fa-solid fa-hospital me-2 text-accent"></i>RUMAH SAKIT</div>
+                    <div class="client-box"><i class="fa-solid fa-briefcase me-2 text-accent"></i>BANK</div>
+                    <div class="client-box"><i class="fa-solid fa-hotel me-2 text-accent"></i>HOTEL</div>
+                    <div class="client-box"><i class="fa-solid fa-warehouse me-2 text-accent"></i>LOGISTIK</div>
+                    <div class="client-box"><i class="fa-solid fa-plane me-2 text-accent"></i>BANDARA</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-6 position-relative" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div class="rounded-4 overflow-hidden shadow-xl border">
+                            <img src="Gambar/siska.jpeg" alt="Perusahaan Cleaning Service KBU" class="img-fluid">
+                        </div>
+                        <div class="experience-badge glass-card p-4 rounded-4 shadow-lg text-center position-absolute">
+                            <h2 class="display-5 fw-bold text-primary mb-0">15+</h2>
+                            <p class="text-sm fw-semibold mb-0 text-muted" data-i18n="about.exp">Tahun Pengalaman Operasional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="section-tag mb-2" data-i18n="about.tag">TENTANG KAWANUA BERKAT UTAMA</div>
+                    <h2 class="section-title fw-bold mb-4" data-i18n="about.title">
+                        Mitra Terpercaya Pengelolaan Fasilitas & Keahlian Kebersihan Indonesia
+                    </h2>
+                    <p class="lead text-muted mb-4" data-i18n="about.lead">
+                        <strong></strong>Kawanua Berkat Utama (KBU)</strong> merupakan perusahaan terdepan yang bergerak di bidang jasa cleaning service, pengelolaan fasilitas (Integrated Facility Management), serta penyedia manpower profesional berkualitas untuk berbagai sektor industri, perkantoran, pusat perbelanjaan, rumah sakit, dan area komersial lainnya.
+                    </p>
+
+                     <p class="text-muted mb-4" data-i18n="about.desc">
+                        Dengan memadukan standar operasional yang ketat, teknologi kebersihan ramah lingkungan, serta pembinaan SDM secara berkesinambungan, kami memastikan setiap properti yang kami kelola berada dalam tingkat kebersihan, keamanan, dan kenyamanan tertinggi.
+                    </p>
+                    <div class="row g-3 pt-2">
+                        <div class="col-sm-6">
+                            <div class="feature-box d-flex align-items-center gap-3 p-3 rounded-3 bg-surface border">
+                                <i class="fa-solid fa-user-shield text-accent fa-2x"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1" data-i18n="about.feat1">Tenaga Kerja Tersertifikasi</h6>
+                                    <small class="text-muted" data-i18n="about.feat1Sub">Pelatihan intensif & SOP baku</small>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="col-sm-6">
+                            <div class="feature-box d-flex align-items-center gap-3 p-3 rounded-3 bg-surface border">
+                                <i class="fa-solid fa-leaf text-success fa-2x"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1" data-i18n="about.feat2">Eco-Friendly Cleaning</h6>
+                                    <small class="text-muted" data-i18n="about.feat2Sub">Bahan kimia aman & bersertifikat</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="py-6 bg-surface">
+        <div class="container">
+            <div class="text-center max-w-700 mx-auto mb-5">
+                <div class="section-tag mb-2">HASIL PENGERJAAN KAMI</div>
+                <h2 class="section-title fw-bold">Transformasi Kebersihan Gedung (Before vs After)</h2>
+                <p class="text-muted">Geser slider interaktif di bawah untuk melihat perbedaan kualitas kristalisasi marmer dan deep cleaning Carefast KBU.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="ba-slider-container">
+                        <img src="Gambar/dalam kantor.png" class="ba-img-after" alt="Sesudah Cleaning KBU">
+                        <img src="Gambar/Kantor berantakan.png" class="ba-img-before" alt="Sebelum Cleaning">
+                        
+                        <span class="ba-badge ba-badge-before">Sebelum Cleaning</span>
+                        <span class="ba-badge ba-badge-after">Sesudah Cleaning</span>
+                        <div class="ba-slider-handle">
+                            <div class="ba-handle-button">
+                                <i class="fa-solid fa-left-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="py-6 position-relative" id="vision">
+        <div class="container">
+            <div class="text-center max-w-700 mx-auto mb-5">
+                <div class="section-tag mb-2" data-i18n="vision.tag">NILAI & ARAH PERUSAHAAN</div>
+                <h2 class="section-title fw-bold" data-i18n="vision.title">Visi & Misi Perusahaan</h2>
+                <p class="text-muted" data-i18n="vision.subtitle">Landasan utama dalam menghadirkan integritas, dedikasi, dan keunggulan pelayanan harian bagi seluruh klien korporat.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="card h-100 border-0 shadow-lg p-4 rounded-4 bg-primary-dark text-white">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="icon-square bg-accent text-dark mb-4">
+                                    <i class="fa-solid fa-eye fa-xl"></i>
+                                </div>
+                                <h3 class="fw-bold mb-3" data-i18n="vision.visiHeader">Visi Perusahaan</h3>
+                                <p class="lead opacity-90" data-i18n="vision.visiBody">
+                                    "Menjadi perusahaan Cleaning Service yang paling terpercaya, inovatif, serta berstandar internasional terdepan di Indonesia."
+                                </p>
+                            </div>
+                            <div class="pt-4 border-top border-white-20">
+                                <div class="d-flex align-items-center gap-2 text-accent fw-semibold">
+                                    <i class="fa-solid fa-bullseye"></i> <span data-i18n="vision.visiGoal">Orientasi Kepuasan & Kualitas Berkelanjutan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                                                        <h6 class="fw-bold mb-1" data-i18n="vision.m1Title">Pelayanan Terbaik & Profesional</h6>
+                                        <p class="text-muted text-sm mb-0" data-i18n="vision.m1Desc">Memberikan solusi pengelolaan kebersihan dan operasional yang disesuaikan secara khusus dengan kebutuhan unik setiap klien.</p>
+                                    </div>
+                                </div>
+                                <div class="misi-item d-flex gap-3 align-items-start p-3 rounded-3 bg-surface border">
+                                    <span class="misi-num">02</span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1" data-i18n="vision.m2Title">Pengawasan Kualitas Ketat (Quality Assurance)</h6>
+                                        <p class="text-muted text-sm mb-0" data-i18n="vision.m2Desc">Mengutamakan kualitas kerja prima lewat sistem supervisi berkala dan audit kebersihan secara konsisten.</p>
+                                    </div>
+                                </div>
+                                <div class="misi-item d-flex gap-3 align-items-start p-3 rounded-3 bg-surface border">
+                                    <span class="misi-num">03</span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1" data-i18n="vision.m3Title">Pengembangan SDM Berkelanjutan</h6>
+                                        <p class="text-muted text-sm mb-0" data-i18n="vision.m3Desc">Meningkatkan kompetensi, sertifikasi, serta kesejahteraan tenaga kerja agar menghasilkan performa terbaik.</p>
+                                    </div>
+                                </div>
+                                <div class="misi-item d-flex gap-3 align-items-start p-3 rounded-3 bg-surface border">
+                                    <span class="misi-num">04</span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1" data-i18n="vision.m4Title">Lingkungan Kerja Bersih & Sehat</h6>
+                                        <p class="text-muted text-sm mb-0" data-i18n="vision.m4Desc">Menciptakan suasana area komersial dan industri yang higienis, aman, dan meningkatkan produktivitas penghuni.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section class="py-6" id="service">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                <div>
+                    <div class="section-tag mb-2" data-i18n="service.tag">SOLUSI FACILITY MANAGEMENT</div>
+                    <h2 class="section-title fw-bold mb-0" data-i18n="service.title">Layanan Kebersihan & Pengelolaan Gedung</h2>
+                </div>
+                <div class="mt-3 mt-md-0">
+                    <span class="text-muted text-sm" data-i18n="service.sub">Pilih jenis layanan sesuai skala kebutuhan perusahaan Anda</span>
+                </div>
+            </div>
+            <div class="row g-4">
+                                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-md service-card-hover rounded-4 overflow-hidden">
+                        <div class="card-img-top-wrapper position-relative">
+                            <div class="service-icon-floating"><i class="fa-solid fa-broom"></i></div>
+                            <div class="service-img-placeholder bg-gradient-navy">
+                                <i class="fa-solid fa-sparkles fa-3x text-accent opacity-50"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold mb-2">Daily Cleaning</h5>
+                                <p class="card-text text-muted text-sm" data-i18n="service.dailyDesc">
+                                    Layanan kebersihan harian rutin untuk area perkantoran, pusat perbelanjaan, apartemen, dan area publik.
+                                </p>
+                            </div>
+  <button class="btn btn-outline-primary btn-sm rounded-pill w-100 mt-3 fw-semibold" data-service-select="Daily Cleaning">
+                                <i class="fa-solid fa-calculator me-1"></i> Hitung Estimasi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-md service-card-hover rounded-4 overflow-hidden">
+                        <div class="card-img-top-wrapper position-relative">
+                            <div class="service-icon-floating"><i class="fa-solid fa-soap"></i></div>
+                            <div class="service-img-placeholder bg-gradient-ocean">
+                                <i class="fa-solid fa-pump-soap fa-3x text-accent opacity-50"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold mb-2">General Cleaning</h5>
+                                <p class="card-text text-muted text-sm" data-i18n="service.generalDesc">
+                                    Pembersihan total & mendalam secara berkala untuk area karpet, kristalisasi lantai marmer/granit, dan toilet.
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill w-100 mt-3 fw-semibold" data-service-select="General Cleaning">
+                                <i class="fa-solid fa-calculator me-1"></i> Hitung Estimasi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+   <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-md service-card-hover rounded-4 overflow-hidden">
+                        <div class="card-img-top-wrapper position-relative">
+                            <div class="service-icon-floating"><i class="fa-solid fa-building-user"></i></div>
+                            <div class="service-img-placeholder bg-gradient-teal">
+                                <i class="fa-solid fa-mountain-city fa-3x text-accent opacity-50"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold mb-2">Glass & High Rise</h5>
+                                <p class="card-text text-muted text-sm" data-i18n="service.glassDesc">
+                                    Pembersihan kaca luar facade gedung bertingkat tinggi dengan alat gondola, rope access, & tim K3 bersertifikat.
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill w-100 mt-3 fw-semibold" data-service-select="Glass Cleaning">
+                                <i class="fa-solid fa-calculator me-1"></i> Hitung Estimasi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+  <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-md service-card-hover rounded-4 overflow-hidden">
+                        <div class="card-img-top-wrapper position-relative">
+                            <div class="service-icon-floating"><i class="fa-solid fa-seedling"></i></div>
+                            <div class="service-img-placeholder bg-gradient-emerald">
+                                <i class="fa-solid fa-tree fa-3x text-white opacity-50"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold mb-2">Gardening Service</h5>
+                                <p class="card-text text-muted text-sm" data-i18n="service.gardenDesc">
+                                    Perawatan lansekap, pemangkasan rumput, pemupukan taman indoor/outdoor, dan dekorasi tanaman hias gedung.
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill w-100 mt-3 fw-semibold" data-service-select="Gardening Service">
+                                <i class="fa-solid fa-calculator me-1"></i> Hitung Estimasi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <section class="py-6 bg-body" id="calculator">
+        <div class="container">
+            <div class="text-center max-w-700 mx-auto mb-5">
+                <div class="section-tag mb-2" data-i18n="calc.tag">KALKULATOR ESTIMASI INTERAKTIF</div>
+                <h2 class="section-title fw-bold" data-i18n="calc.title">Hitung Estimasi Biaya Layanan Gedung</h2>
+                <p class="text-muted" data-i18n="calc.subtitle">Dapatkan perkiraan transparan anggaran kebutuhan cleaning service & fasilitas gedung Anda hanya dalam beberapa detik.</p>
+            </div>
+            <div class="card border-0 shadow-2xl rounded-4 overflow-hidden">
+                <div class="row g-0">
+
+                    <div class="col-lg-7 p-4 p-md-5">
+                        <form id="facilityCalcForm">
+                          
+                            <div class="mb-4">
+                                <label class="form-label fw-bold" data-i18n="calc.selectService">1. Pilih Jenis Layanan Utama:</label>
+                                <select class="form-select form-select-lg rounded-3" id="calcServiceType">
+                                    <option value="daily" data-price="4500">Daily Cleaning Service (Kantor/Mall)</option>
+                                    <option value="general" data-price="8500">General Deep Cleaning</option>
+                                    <option value="glass" data-price="12000">Glass & High Rise Building Cleaning</option>
+                                    <option value="gardening" data-price="3500">Gardening & Landscape Maintenance</option>
+                                    <option value="security" data-price="6500000">Outsource Security Guard (Per Personel)</option>
+                                </select>
+                            </div>
+                                 <div class="mb-4" id="areaSliderGroup">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <label class="form-label fw-bold mb-0" data-i18n="calc.areaSize">2. Estimasi Luas Area (m²):</label>
+                                    <span class="badge bg-primary fs-6" id="areaSizeDisplay">500 m²</span>
+                                </div>
+                                <input type="range" class="form-range" id="calcAreaInput" min="100" max="10000" step="50" value="500">
+                                <div class="d-flex justify-content-between text-xs text-muted">
+                                    <span>100 m²</span>
+                                    <span>5,000 m²</span>
+                                    <span>10,000 m²</span>
+                                </div>
+                            </div>
+                                 <div class="mb-4" id="personnelSliderGroup">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <label class="form-label fw-bold mb-0" data-i18n="calc.personnel">3. Estimasi Tenaga Kerja (Orang):</label>
+                                    <span class="badge bg-accent text-dark fs-6" id="personnelDisplay">5 Personel</span>
+                                </div>
+                                <input type="range" class="form-range" id="calcPersonnelInput" min="1" max="50" step="1" value="5">
+                            </div>
+                                                            <label class="form-label fw-bold" data-i18n="calc.contract">4. Durasi / Frekuensi Kontrak:</label>
+                                <div class="btn-group w-100" role="group">
+                                    <input type="radio" class="btn-check" name="calcContract" id="contractMonthly" value="monthly" checked>
+                                    <label class="btn btn-outline-primary" for="contractMonthly">Kontrak Bulanan</label>
+                                    <input type="radio" class="btn-check" name="calcContract" id="contractYearly" value="yearly">
+                                    <label class="btn btn-outline-primary" for="contractYearly">Kontrak Tahunan (Diskon 10%)</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 bg-primary-dark text-white p-4 p-md-5 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center gap-2 mb-3 text-accent">
+                                <i class="fa-solid fa-calculator fa-xl"></i>
+                                <span class="fw-bold tracking-wider text-uppercase" data-i18n="calc.summaryHeader">Ringkasan Estimasi</span>
+                            </div>
+                            <div class="calc-detail-box bg-white-10 p-3 rounded-3 mb-4">
+ <div class="d-flex justify-content-between text-sm mb-2">
+                                    <span class="opacity-75">Layanan:</span>
+                                    <span class="fw-bold" id="resServiceName">Daily Cleaning</span>
+                                </div>
+                                <div class="d-flex justify-content-between text-sm mb-2">
+                                    <span class="opacity-75">Cakupan Area:</span>
+                                    <span class="fw-bold" id="resArea">500 m²</span>
+                                </div>
+                                <div class="d-flex justify-content-between text-sm mb-2">
+                                    <span class="opacity-75">Personel Direkomendasikan:</span>
+                                    <span class="fw-bold" id="resPersonnel">5 Personel</span>
+                                </div>
+                                <div class="d-flex justify-content-between text-sm">
+                                    <span class="opacity-75">Quality Control & Chemical:</span>
+                                    <span class="text-success fw-bold">Included (ISO 9001)</span>
+                                </div>
+                            </div>
+                            <div class="total-price-box text-center p-4 rounded-4 bg-gradient-ocean mb-4">
+                                <span class="text-xs text-uppercase opacity-75 d-block mb-1" data-i18n="calc.totalLabel">Perkiraan Biaya / Bulan</span>
+                                <h2 class="display-6 fw-extrabold text-white mb-0" id="resTotalPrice">Rp 12.500.000</h2>
+                                <small class="text-xs opacity-75">*Estimasi belum termasuk PPN. Harga final sesuai survey lokasi.</small>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-accent-lg rounded-pill fw-bold w-100 mb-2" id="btnSendCalcWA">
+                                <i class="fa-brands fa-whatsapp fa-lg me-2"></i> Minta Proposal via WhatsApp
+                            </button>
+                            <button class="btn btn-outline-light rounded-pill w-100 text-sm opacity-90" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                                <i class="fa-solid fa-file-signature me-1"></i> Form Resmi Penawaran
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <div class="container">
+            <div class="text-center max-w-700 mx-auto mb-4">
+                <div class="section-tag mb-2">JARINGAN CABANG OPERASIONAL</div>
+                <h2 class="section-title fw-bold">Lokasi Cabang Carefast KBU di Indonesia</h2>
+                <p class="text-muted">Pilih kota untuk melihat kantor cabang terdekat & jangkauan operasional kami.</p>
+            </div>
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+                <span class="branch-pill active" data-branch="jakarta">Jakarta (Pusat)</span>
+                <span class="branch-pill" data-branch="surabaya">Surabaya</span>
+                <span class="branch-pill" data-branch="bandung">Bandung</span>
+                <span class="branch-pill" data-branch="bali">Bali</span>
+                <span class="branch-pill" data-branch="medan">Medan</span>
+            </div>
+            <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-card">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <span class="badge bg-primary-subtle text-primary px-3 py-1 mb-2 fw-semibold">Kantor Cabang Resmi</span>
+                        <h3 class="fw-bold mb-3 text-primary-dark" id="branchCityName">Jakarta (Kantor Pusat)</h3>
+                        <p class="text-muted mb-3" id="branchAddress">Gedung Carefast Tower Lt. 5-8, Jl. TB Simatupang No. 88, Cilandak, Jakarta Selatan</p>
+                        
+                        <div class="d-flex flex-column gap-2 text-sm">
+                            <div><i class="fa-solid fa-phone text-accent me-2"></i><span id="branchPhone">+62 21 8062 5555</span></div>
+                            <div><i class="fa-solid fa-map-location-dot text-success me-2"></i><strong>Area Jangkauan:</strong> <span id="branchCoverage">Jabodetabek & Banten</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <div class="p-4 rounded-4 bg-primary-dark text-white">
+                            <i class="fa-solid fa-city fa-3x text-accent mb-3"></i>
+                            <h5 class="fw-bold mb-2">Layanan Siap Kirim Tim Survey</h5>
+                            <p class="text-xs opacity-80 mb-3">Tim Field Inspector Carefast KBU siap melakukan survey fisik lokasi properti Anda secara gratis tanpa biaya.</p>
+                            <a href="#contact" class="btn btn-outline-light btn-sm rounded-pill px-4">Jadwalkan Survey Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="col-lg-8">
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Job 1 -->
+                        <div class="job-card card border-0 shadow-sm rounded-4 p-4">
+                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                                <div>
+                                    <span class="badge bg-success-subtle text-success mb-2">Cleaning Service</span>
+                                    <h5 class="fw-bold mb-1">Supervisor Cleaning Gedung Bertingkat</h5>
+                                    <div class="d-flex gap-3 text-xs text-muted">
+                                        <span><i class="fa-solid fa-location-dot me-1"></i>Jakarta Selatan</span>
+                                        <span><i class="fa-solid fa-clock me-1"></i>Full-time</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-primary rounded-pill btn-sm px-4 fw-bold" data-apply-job="Supervisor Cleaning Gedung">Lamar Sekarang</button>
+                            </div>
+                        </div>
+     <div class="job-card card border-0 shadow-sm rounded-4 p-4">
+                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                                <div>
+                                    <span class="badge bg-primary-subtle text-primary mb-2">Security</span>
+                                    <h5 class="fw-bold mb-1">Anggota Satpam / Security Guard (Gada Pratama)</h5>
+                                    <div class="d-flex gap-3 text-xs text-muted">
+                                        <span><i class="fa-solid fa-location-dot me-1"></i>Surabaya & Bandung</span>
+                                        <span><i class="fa-solid fa-clock me-1"></i>Shift Basis</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-primary rounded-pill btn-sm px-4 fw-bold" data-apply-job="Anggota Satpam Gada Pratama">Lamar Sekarang</button>
+                            </div>
+                        </div>
+                                      <div class="job-card card border-0 shadow-sm rounded-4 p-4">
+                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                                <div>
+                                    <span class="badge bg-warning-subtle text-warning-emphasis mb-2">Engineering</span>
+                                    <h5 class="fw-bold mb-1">Teknisi MEP (Mechanical Electrical Plumbing)</h5>
+                                    <div class="d-flex gap-3 text-xs text-muted">
+                                        <span><i class="fa-solid fa-location-dot me-1"></i>Tangerang & Bekasi</span>
+                                        <span><i class="fa-solid fa-clock me-1"></i>Full-time</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-primary rounded-pill btn-sm px-4 fw-bold" data-apply-job="Teknisi MEP">Lamar Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="py-6 bg-surface">
+        <div class="container">
+            <div class="text-center max-w-700 mx-auto mb-5">
+                <div class="section-tag mb-2" data-i18n="client.tag">MITRA STRATEGIS KAMI</div>
+                <h2 class="section-title fw-bold" data-i18n="client.title">Dipercaya Oleh Berbagai Industri</h2>
+                <p class="text-muted" data-i18n="client.subtitle">Kepercayaan dari ratusan gedung perkantoran, pusat perbelanjaan, dan kawasan industri ternama di seluruh Indonesia.</p>
+            </div>
+               <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-card">
+                <div class="row align-items-center">
+                    <div class="col-md-2 text-center text-md-start mb-3 mb-md-0">
+                        <i class="fa-solid fa-quote-left display-3 text-accent opacity-50"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <p class="lead fst-italic mb-3" id="testimonialText">
+                            "Carefast KBU telah mengelola kebersihan dan manajemen fasilitas gedung perkantoran kami selama 4 tahun. Respons tim sangat cepat, standar kebersihan karpet dan toilet sangat terjaga, serta supervisory yang aktif melayani kebutuhan gedung kami."
+                        </p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h6 class="fw-bold mb-0" id="testimonialAuthor">Bpk. Hendra Wijaya</h6>
+                                <small class="text-muted" id="testimonialRole">Building Manager - Central Business District Jakarta</small>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm rounded-circle" id="prevTestimonialBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button class="btn btn-outline-primary btn-sm rounded-circle" id="nextTestimonialBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                 </div>
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-2xl rounded-4 p-4 p-md-5 bg-card text-dark">
+                        <h4 class="fw-bold mb-3 text-primary-dark">Formulir Pesan & Penawaran</h4>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-sm fw-semibold">Nama Lengkap *</label>
+                                    <input type="text" class="form-control rounded-3" required placeholder="Bpk/Ibu Name">
+                                     </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-sm fw-semibold">Nama Perusahaan / Gedung</label>
+                                    <input type="text" class="form-control rounded-3" placeholder="PT Contoh Gedung">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-sm fw-semibold">Email Perusahaan *</label>
+                                    <input type="email" class="form-control rounded-3" required placeholder="name@company.com">
+                                       </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-sm fw-semibold">Nomor WhatsApp / Telepon *</label>
+                                    <input type="tel" class="form-control rounded-3" required placeholder="0812xxxxxxx">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-sm fw-semibold">Pesan / Kebutuhan Layanan</label>
+                                    <textarea class="form-control rounded-3" rows="4" placeholder="Jelaskan kebutuhan kebersihan atau penawaran yang Anda perlukan..."></textarea>
+                                </div>
+                                  <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg rounded-pill fw-bold w-100">
+                                        <i class="fa-solid fa-paper-plane me-2"></i> Kirim Pesan Penawaran
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="bg-black text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-white-20">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3 text-accent">CAREFAST KBU</h4>
+                    <p class="text-xs text-secondary mb-3">
+                        PT Kawanua Berkat Utama - Perusahaan Integrated Facility Services & Outsource Manpower Terpercaya di Indonesia.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold mb-3 text-light">Navigasi</h6>
+                    <ul class="list-unstyled text-xs d-flex flex-column gap-2 text-secondary">
+                        <li><a href="#home" class="text-reset text-decoration-none">Beranda</a></li>
+                        <li><a href="#about" class="text-reset text-decoration-none">Tentang Kami</a></li>
+                        <li><a href="#service" class="text-reset text-decoration-none">Layanan</a></li>
+                        <li><a href="#calculator" class="text-reset text-decoration-none">Kalkulator Biaya</a></li>
+                        <li><a href="#careers" class="text-reset text-decoration-none">Portal Karir</a></li>
+                    </ul>
+                </div>
+                 <div class="col-6 col-lg-3">
+                    <h6 class="fw-bold mb-3 text-light">Layanan Utama</h6>
+                    <ul class="list-unstyled text-xs d-flex flex-column gap-2 text-secondary">
+                        <li>Daily Commercial Cleaning</li>
+                        <li>General Deep Cleaning</li>
+                        <li>Glass & Rope Access Cleaning</li>
+                        <li>Gardening & Landscape Maintenance</li>
+                        <li>Outsource Security Guard</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3 text-light">Sertifikasi & Standar</h6>
+                    <div class="d-flex flex-column gap-2">
+                        <span class="badge bg-dark border text-light p-2 text-start text-xs"><i class="fa-solid fa-certificate text-accent me-2"></i>ISO 9001:2015 Management System</span>
+                        <span class="badge bg-dark border text-light p-2 text-start text-xs"><i class="fa-solid fa-shield-halved text-accent me-2"></i>ISO 4501:2018 K3 Safety Standard</span>
+                    </div>
+                </div>
+            </div>
+  <div class="text-center pt-3 text-xs text-secondary">
+                <p class="mb-0">© 2026 PT Kawanua Berkat Utama (Carefast Indonesia). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal: Request Formal Proposal Quote -->
+    <div class="modal fade" id="quoteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-2xl">
+                <div class="modal-header bg-primary-dark text-white border-0">
+                    <h5 class="modal-header-title fw-bold mb-0"><i class="fa-solid fa-file-contract text-accent me-2"></i>Formulir Minta Penawaran Resmi</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                <div class="modal-body p-4">
+                    <form id="modalQuoteForm">
+                        <div class="mb-3">
+                            <label class="form-label text-sm fw-semibold">Nama Lengkap / Jabatan</label>
+                            <input type="text" class="form-control rounded-3" required placeholder="Bpk/Ibu Manager">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-sm fw-semibold">Nama Perusahaan / Gedung</label>
+                            <input type="text" class="form-control rounded-3" required placeholder="Nama Perusahaan">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-sm fw-semibold">Jenis Layanan Dibutuhkan</label>
+                            <select class="form-select rounded-3">
+                                <option>Daily Cleaning Service Gedung</option>
+                                <option>Outsource Manpower / Security</option>
+                                <option>General Deep Cleaning</option>
+                                <option>Integrated Facility Management</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-sm fw-semibold">Nomor Telepon / WhatsApp *</label>
+                            <input type="tel" class="form-control rounded-3" required placeholder="0812xxxxxxx">
+                        </div>
+                        <button type="submit" class="btn btn-accent-lg rounded-pill fw-bold w-100 py-2">
+                            Kirim Permintaan Penawaran
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="applyJobModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-2xl">
+                <div class="modal-header bg-primary-dark text-white border-0">
+                    <h5 class="modal-header-title fw-bold mb-0"><i class="fa-solid fa-briefcase text-accent me-2"></i>Form Lamaran Kerja</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="jobApplyForm">
+                        <div class="mb-3">
+                            <label class="form-label text-sm fw-semibold">Posisi Dilamar</label>
+                            <input type="text" class="form-control rounded-3" id="jobTitleInput" value="Lamaran Umum">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-sm fw-semibold">Nama Lengkap Pelamar *</label>
+                            <input type="text" class="form-control rounded-3" required placeholder="Nama Sesuai KTP">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-sm fw-semibold">Nomor WhatsApp Aktif *</label>
+                            <input type="tel" class="form-control rounded-3" required placeholder="08xxxxxxxxxx">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-sm fw-semibold">Kota Domisili</label>
+                            <input type="text" class="form-control rounded-3" placeholder="Contoh: Jakarta / Surabaya">
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-pill fw-bold w-100 py-2">
+                            Kirim Lamaran Sekarang
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ <a href="https://wa.me/6281584850845?text=Halo%20Carefast%20KBU,%20saya%20inisiatif%20bertanya%20mengenai%20layanan%20facility%20management" target="_blank" class="floating-wa-btn shadow-lg" title="Chat WhatsApp Fast Response">
+        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </a>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/careers.js"></script>
+    <script src="js/interactive.js"></script>
+</body>
+</html>
